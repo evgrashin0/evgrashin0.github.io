@@ -52,14 +52,22 @@
     <script src="main.js"></script>
   </head>
   <body>
-      <p id="loading">Loading...</p>
+      <div id="cntr">	  <div id="cprt">Лабораторная работа №1.<br>Студенты Азаров, Евграшин (АВТ-418)</div><p id="loading">Загрузка...</p>
       <canvas id="canvas1" style="display: none;"></canvas>
       <canvas id="canvas2"></canvas>
       <div id="text" style="display: none;">
         <p>
-          Find a cat's face in the viewport of the camera.
+          Распознавание лица и наложение маски.
         </p>
-        <button id="stop">Stop</button>
+        <button id="stop">Остановить показ</button>
       </div>
+	  </div>
+	  
+	  <style>
+	  body {font-family: arial; font-size: 15px; margin: 0;}
+	  #cntr {margin: 100px 0; text-align: center;}
+	  #cprt {color: #999; margin: 0 0 10px;}
+	  canvas {border: 2px solid #000;}
+	  </style>
   </body>
 </html>
